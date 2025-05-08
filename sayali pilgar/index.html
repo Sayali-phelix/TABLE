@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Student Table</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h2>Student Table</h2>
+  <input type="text" id="searchInput" placeholder="Search by Index, Name, Roll No or Status...">
+
+  <table id="studentTable">
+    <thead>
+      <tr>
+        <th onclick="sortTable(0)">Index ^v</th>
+        <th>Status</th>
+        <th onclick="sortTable(2)">Name  ▲▼</th>
+        <th>Roll No</th>
+      </tr>
+    </thead>
+    <tbody>
+     
+      <tr><td>1</td><td>Active</td><td>Sayali Pilgar</td><td>1001</td></tr>
+<tr><td>2</td><td>Inactive</td><td>Diya Mehra</td><td>1002</td></tr>
+<tr><td>3</td><td>Active</td><td>Vivaan Gupta</td><td>1003</td></tr>
+<tr><td>4</td><td>Inactive</td><td>Ananya Joshi</td><td>1004</td></tr>
+<tr><td>5</td><td>Active</td><td>Aditya Verma</td><td>1005</td></tr>
+<tr><td>6</td><td>Inactive</td><td>Ishita Nair</td><td>1006</td></tr>
+<tr><td>7</td><td>Active</td><td>Krishna Reddy</td><td>1007</td></tr>
+<tr><td>8</td><td>Inactive</td><td>Sneha Das</td><td>1008</td></tr>
+<tr><td>9</td><td>Active</td><td>Rohan Patel</td><td>1009</td></tr>
+<tr><td>10</td><td>Inactive</td><td>Meera Jain</td><td>1010</td></tr>
+<tr><td>11</td><td>Active</td><td>Arjun Singh</td><td>1011</td></tr>
+<tr><td>12</td><td>Inactive</td><td>Priya Rathi</td><td>1012</td></tr>
+<tr><td>13</td><td>Active</td><td>Siddharth Pillai</td><td>1013</td></tr>
+<tr><td>14</td><td>Inactive</td><td>Kavya Bhat</td><td>1014</td></tr>
+<tr><td>15</td><td>Active</td><td>Manav Yadav</td><td>1015</td></tr>
+<tr><td>16</td><td>Inactive</td><td>Tanvi Iyer</td><td>1016</td></tr>
+<tr><td>17</td><td>Active</td><td>Rajat Chauhan</td><td>1017</td></tr>
+<tr><td>18</td><td>Inactive</td><td>Simran Kaur</td><td>1018</td></tr>
+<tr><td>19</td><td>Active</td><td>Harsh Mittal</td><td>1019</td></tr>
+<tr><td>20</td><td>Inactive</td><td>Neha Sinha</td><td>1020</td></tr>
+<tr><td>21</td><td>Active</td><td>Varun Malhotra</td><td>1021</td></tr>
+<tr><td>22</td><td>Inactive</td><td>Aditi Rao</td><td>1022</td></tr>
+<tr><td>23</td><td>Active</td><td>Nikhil Kapoor</td><td>1023</td></tr>
+<tr><td>24</td><td>Inactive</td><td>Shruti Deshmukh</td><td>1024</td></tr>
+<tr><td>25</td><td>Active</td><td>Kunal Bhatt</td><td>1025</td></tr>
+<tr><td>26</td><td>Inactive</td><td>Riya Jadhav</td><td>1026</td></tr>
+<tr><td>27</td><td>Active</td><td>Devansh Bansal</td><td>1027</td></tr>
+<tr><td>28</td><td>Inactive</td><td>Avni Sharma</td><td>1028</td></tr>
+<tr><td>29</td><td>Active</td><td>Ayush Dubey</td><td>1029</td></tr>
+<tr><td>30</td><td>Inactive</td><td>Naina Kulkarni</td><td>1030</td></tr>
+<tr><td>31</td><td>Active</td><td>Parth Agarwal</td><td>1031</td></tr>
+<tr><td>32</td><td>Inactive</td><td>Pooja Salunkhe</td><td>1032</td></tr>
+<tr><td>33</td><td>Active</td><td>Rahul Shetty</td><td>1033</td></tr>
+<tr><td>34</td><td>Inactive</td><td>Trisha Ghosh</td><td>1034</td></tr>
+<tr><td>35</td><td>Active</td><td>Ankit Rawat</td><td>1035</td></tr>
+<tr><td>36</td><td>Inactive</td><td>Divya Venkatesh</td><td>1036</td></tr>
+<tr><td>37</td><td>Active</td><td>Abhishek Naik</td><td>1037</td></tr>
+<tr><td>38</td><td>Inactive</td><td>Radhika Menon</td><td>1038</td></tr>
+<tr><td>39</td><td>Active</td><td>Samar Sehgal</td><td>1039</td></tr>
+<tr><td>40</td><td>Inactive</td><td>Charvi Dey</td><td>1040</td></tr>
+<tr><td>41</td><td>Active</td><td>Yash Rathore</td><td>1041</td></tr>
+<tr><td>42</td><td>Inactive</td><td>Nikita Paul</td><td>1042</td></tr>
+<tr><td>43</td><td>Active</td><td>Arnav Saxena</td><td>1043</td></tr>
+<tr><td>44</td><td>Inactive</td><td>Ira Pathak</td><td>1044</td></tr>
+<tr><td>45</td><td>Active</td><td>Tushar Talwar</td><td>1045</td></tr>
+<tr><td>46</td><td>Inactive</td><td>Anjali Bhardwaj</td><td>1046</td></tr>
+<tr><td>47</td><td>Active</td><td>Omkar Joshi</td><td>1047</td></tr>
+<tr><td>48</td><td>Inactive</td><td>Priyanshi Kaul</td><td>1048</td></tr>
+<tr><td>49</td><td>Active</td><td>Kartik Ahuja</td><td>1049</td></tr>
+<tr><td>50</td><td>Inactive</td><td>Shreya Tiwari</td><td>1050</td></tr>
+<tr><td>51</td><td>Active</td><td>Harshit Lamba</td><td>1051</td></tr>
+<tr><td>52</td><td>Inactive</td><td>Ayesha Dutt</td><td>1052</td></tr>
+<tr><td>53</td><td>Active</td><td>Pranav Jaiswal</td><td>1053</td></tr>
+<tr><td>54</td><td>Inactive</td><td>Sanya Rajput</td><td>1054</td></tr>
+
+
+    </tbody>
+  </table>
+
+  <script src="script.js"></script>
+</body>
+</html>
