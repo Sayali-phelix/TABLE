@@ -1,4 +1,3 @@
-// Search functionality
 document.getElementById("searchInput").addEventListener("keyup", function () {
     const filter = this.value.toLowerCase();
     const rows = document.querySelectorAll("#studentTable tbody tr");
@@ -9,7 +8,6 @@ document.getElementById("searchInput").addEventListener("keyup", function () {
     });
   });
   
-  // Sort functionality
   let sortDirection = true;
   
   function sortTable(colIndex) {
@@ -21,7 +19,6 @@ document.getElementById("searchInput").addEventListener("keyup", function () {
       let x = a.cells[colIndex].textContent.trim().toLowerCase();
       let y = b.cells[colIndex].textContent.trim().toLowerCase();
   
-      // If numeric sort
       if (!isNaN(x) && !isNaN(y)) {
         return sortDirection ? x - y : y - x;
       }
@@ -31,7 +28,6 @@ document.getElementById("searchInput").addEventListener("keyup", function () {
   
     sortDirection = !sortDirection;
   
-    // Append sorted rows
     rows.forEach(row => tbody.appendChild(row));
   }
   
